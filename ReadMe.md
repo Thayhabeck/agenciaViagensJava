@@ -6,7 +6,7 @@
 Cliente - Classe para armazenar os dados dos clientes. <br>
 Destino - Classe para armazenar informações do destino. <br>
 Viagem - Classe que armazena as informações da viagem, com um cliente e um destino atrelada a ela. <br>
-Agencia - Classe que lista os destinos, clientes e viagens cadastrados e os métodos de cadastro, consulta e listagem de informações.
+Agencia - Classe que lista os destinos, clientes e viagens cadastrados e os métodos de cadastro, consulta e listagem de informações.<br>
 Main - Classe que executa o programa.
 
 #### Diagrama UML:
