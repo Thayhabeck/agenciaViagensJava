@@ -1,9 +1,5 @@
 package agenciaviagens;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Viagem {
 
 	private String dataIda;
@@ -12,7 +8,6 @@ public class Viagem {
 	private int dias;
 	private double total;
 	private Cliente cliente;
-	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
 	public Viagem() {
 	}
@@ -49,14 +44,15 @@ public class Viagem {
 		return this.destViagem;
 	}
 	
-	public int getDiarias() throws ParseException {
-		Date ida = sdf.parse(this.dataIda);
-		Date volta = sdf.parse(this.dataVolta);
-		this.dias = (int) ((volta.getTime() - ida.getTime())/(1000 * 60 * 60 * 24));
+	public int getDiarias(){
 		return this.dias;
 	}
 	
-	public double getPrecoTotal() throws ParseException {
+	public void setDiarias(int dias){
+		this.dias = dias;
+	}
+	
+	public double getPrecoTotal(){
 		this.total = (this.getDiarias() * this.destViagem.getPreco());
 		return this.total;
 	}
