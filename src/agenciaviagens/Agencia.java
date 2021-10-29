@@ -69,7 +69,7 @@ public class Agencia {
 			this.listaDestinos.get(indexD).setEstado(read.nextLine().toUpperCase());
 			System.out.printf("PAÍS: ");
 			this.listaDestinos.get(indexD).setPais(read.nextLine().toUpperCase());
-			System.out.printf("PREÇO DA DIÁRIA (use . como separador decimal): ");
+			System.out.printf("PREÇO DA DIÁRIA: ");
 			try {
 				preco = read.nextLine();
 				this.listaDestinos.get(indexD).setPreco(Double.parseDouble(preco));
